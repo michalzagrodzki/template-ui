@@ -1,12 +1,12 @@
 # ui-template
 
-This project is base for future testing front-end frameworks
+This project is base for future testing of front-end frameworks
 
 
 ## Build
 
-run 'grunt'
+run `grunt`
 
 ## Preview in browser
 
-run 'grunt serve'
+run `grunt serve`
