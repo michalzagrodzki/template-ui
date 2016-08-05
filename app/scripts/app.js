@@ -10,21 +10,22 @@
  */
 angular
   .module('uiTemplateApp', [
-    'ngRoute'
+    'ui.router'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+  .config(function($stateProvider) {
+
+    var aboutState = {
+      name: 'about',
+      url: '/about',
+      templateUrl: '/views/about.html'
+      };
+
+    var mainState = {
+      name: 'main',
+      url: '/',
+      templateUrl: '/views/main.html'
+    };
+
+    $stateProvider.state(aboutState);
+    $stateProvider.state(mainState);
   });
