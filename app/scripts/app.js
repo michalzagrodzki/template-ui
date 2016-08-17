@@ -26,6 +26,13 @@ angular
       templateUrl: '/views/main.html'
     };
 
+    var LandingPageState = {
+      name: 'LandingPage',
+      url: '/landing_page',
+      templateUrl: '/views/landing_page.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
+    $stateProvider.state(LandingPageState);
   });
