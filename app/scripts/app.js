@@ -32,7 +32,14 @@ angular
       templateUrl: '/views/landing_page.html'
     };
 
+    var PortfolioState = {
+      name: 'Portfolio',
+      url: '/portfolio',
+      templateUrl: '/views/portfolio.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
+    $stateProvider.state(PortfolioState);
   });
