@@ -68,6 +68,12 @@ angular
       templateUrl: '/views/table.html'
     };
 
+    var ItemsListState = {
+      name: 'ItemsList',
+      url: '/list',
+      templateUrl: '/views/list.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
@@ -77,4 +83,5 @@ angular
     $stateProvider.state(LoginState);
     $stateProvider.state(CalendarState);
     $stateProvider.state(TableState);
+    $stateProvider.state(ItemsListState);
   });
