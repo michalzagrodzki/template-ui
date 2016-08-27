@@ -38,8 +38,15 @@ angular
       templateUrl: '/views/portfolio.html'
     };
 
+    var ArticleState = {
+      name: 'Article',
+      url: '/article',
+      templateUrl: '/views/article.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
     $stateProvider.state(PortfolioState);
+    $stateProvider.state(ArticleState);
   });
