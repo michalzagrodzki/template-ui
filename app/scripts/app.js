@@ -50,10 +50,17 @@ angular
       templateUrl: '/views/form.html'
     };
 
+    var LoginState = {
+      name: 'Login',
+      url: '/login',
+      templateUrl: '/views/login.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
     $stateProvider.state(PortfolioState);
     $stateProvider.state(ArticleState);
     $stateProvider.state(FormState);
+    $stateProvider.state(LoginState);
   });
