@@ -74,6 +74,12 @@ angular
       templateUrl: '/views/list.html'
     };
 
+    var ContactState = {
+      name: 'Contact',
+      url: '/contact',
+      templateUrl: '/views/contact.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
@@ -84,4 +90,5 @@ angular
     $stateProvider.state(CalendarState);
     $stateProvider.state(TableState);
     $stateProvider.state(ItemsListState);
+    $stateProvider.state(ContactState);
   });
