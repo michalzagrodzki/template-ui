@@ -62,6 +62,12 @@ angular
       templateUrl: '/views/calendar.html'
     };
 
+    var TableState = {
+      name: 'Table',
+      url: '/table',
+      templateUrl: '/views/table.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
@@ -70,4 +76,5 @@ angular
     $stateProvider.state(FormState);
     $stateProvider.state(LoginState);
     $stateProvider.state(CalendarState);
+    $stateProvider.state(TableState);
   });
