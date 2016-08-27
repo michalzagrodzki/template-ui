@@ -56,6 +56,12 @@ angular
       templateUrl: '/views/login.html'
     };
 
+    var CalendarState = {
+      name: 'Calendar',
+      url: '/calendar',
+      templateUrl: '/views/calendar.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
@@ -63,4 +69,5 @@ angular
     $stateProvider.state(ArticleState);
     $stateProvider.state(FormState);
     $stateProvider.state(LoginState);
+    $stateProvider.state(CalendarState);
   });
