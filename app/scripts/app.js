@@ -44,9 +44,16 @@ angular
       templateUrl: '/views/article.html'
     };
 
+    var FormState = {
+      name: 'Form',
+      url: '/form',
+      templateUrl: '/views/form.html'
+    };
+
     $stateProvider.state(aboutState);
     $stateProvider.state(mainState);
     $stateProvider.state(LandingPageState);
     $stateProvider.state(PortfolioState);
     $stateProvider.state(ArticleState);
+    $stateProvider.state(FormState);
   });
